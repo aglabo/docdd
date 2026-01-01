@@ -6,16 +6,28 @@
   },
   "metadata": {
     "description": "Deckrd - your goals to tasks framework",
-    "version": "0.1.0"
+    "version": "0.0.3"
   },
   "plugins": [
     {
       "name": "deckrd",
       "description": "your goals to tasks framework",
-      "source": "./",
+      "source": "./plugins/deckrd",
       "strict": false,
       "skills": [
-        "./skills/deckrd"
+        "./plugins/deckrd/skills/deckrd"
+      ]
+    },
+    {
+      "name": "deckrd-coder",
+      "description": "Deckrd タスク実装スキル - tasks.md から指定タスクを自動抽出し、BDD厳格プロセスで実装。内部で bdd-coder エージェント実行。プロジェクトメモリ & serena-mcp 活用でトークン効率化。",
+      "source": "./plugins/deckrd-coder",
+      "strict": false,
+      "skills": [
+        "./plugins/deckrd-coder/skills/deckrd-coder"
+      ],
+      "agents": [
+        "./plugins/deckrd-coder/agents/bdd-coder.md"
       ]
     }
   ]
