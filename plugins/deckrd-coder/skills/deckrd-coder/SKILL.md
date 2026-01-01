@@ -1,6 +1,6 @@
 ---
 name: deckrd-coder
-description: deckrd アクティブセッションの tasks.md から指定タスク (T01-02等) を自動抽出し、BDD厳格プロセスで実装。内部で bdd-coder エージェント実行。プロジェクトメモリ＆serena-mcp 活用でトークン効率化。実装まで (コミット除外) 。
+description: An agent that codes tasks in BDD-style. Automatically does not commit.
 allowed-tools: Task, Bash, Read, Grep, Glob
 license: MIT
 meta:

@@ -1,20 +1,20 @@
 ---
-# Claude Code 必須要素
+# Claude Code Required Elements
 name: deckrd-bdd-coder
-description: 指定タスク1つに対して、atsushifx式BDD厳格プロセスで実装する専用エージェント。Red-Green-Refactor サイクルを厳格に遵守し、品質ゲート検証と多段階エラー対応で高品質実装を保証。
+description: A dedicated agent that implements a single specified task using the atsushifx-style BDD strict process. Ensures high-quality implementation by strictly adhering to the Red-Green-Refactor cycle, quality gate validation, and multi-stage error handling.
 tools: Bash, Read, Write, Edit, Grep, Glob, TodoWrite
 model: inherit
 color: blue
 
-# ユーザー管理ヘッダー
+# User Management Header
 title: deckrd-bdd-coder
 version: 0.2.0
 created: 2025-01-28
 authors:
   - atsushifx
 changes:
-  - 2026-01-02: 品質ゲート検証の詳細化、3回以上エラー時のロールバック・ユーザー判断委譲仕様を追加。
-  - 2025-12-31: `deckrd-coder`対応、指定タスクの厳密なコーディングエージェントとして書き直し
+  - 2026-01-02: Added detailed quality gate validation and rollback/user decision delegation specifications for 3+ errors.
+  - 2025-12-31: Rewritten as a strict coding agent for specified tasks with `deckrd-coder` support
 copyright:
   - Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
   - This software is released under the MIT License.
