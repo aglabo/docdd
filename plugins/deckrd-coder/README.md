@@ -16,9 +16,23 @@ A Claude Code skill that automatically implements Deckrd tasks using a strict BD
 
 ## What is deckrd-coder?
 
-deckrd-coder is a **task implementation skill** that takes tasks defined in a Deckrd session and implements them following a strict Red-Green-Refactor cycle. It extracts tasks from `tasks.md`, manages implementation through a structured 8-step workflow, and ensures code quality through automated testing and linting.
+deckrd-coder is a **completely optional companion plugin** that automates the implementation of Deckrd-generated tasks using a strict BDD (Behavior-Driven Development) workflow.
 
-Rather than manual implementation, deckrd-coder ensures each task is tested first, implemented with minimal code, and refactored systematically—guaranteeing high-quality, traceable changes.
+**It works like this:**
+
+1. You complete a Deckrd session and generate `tasks.md`
+2. You invoke `/deckrd-coder <TASK_ID>` to implement a task
+3. deckrd-coder automatically runs the entire Red-Green-Refactor cycle for you
+
+**Why it's optional:** Deckrd itself is a complete planning framework that works independently. deckrd-coder is purely a helper for automating implementation. You can use Deckrd alone to generate tasks, then implement them manually at your own pace—or use deckrd-coder to accelerate the process with BDD-style automation.
+
+**What makes it different:** Rather than writing code first, deckrd-coder ensures each task follows TDD principles:
+
+1. **Red**: Write tests that fail
+2. **Green**: Write minimal code to pass tests
+3. **Refactor**: Clean and optimize
+
+This guarantees high-quality, fully-tested, traceable changes—with every implementation decision captured and justified.
 
 ## Key Features
 
@@ -31,11 +45,19 @@ Rather than manual implementation, deckrd-coder ensures each task is tested firs
 - Progress Tracking: TodoWrite integration for detailed step management
 - 1 Message = 1 Task: Maintains focus and code quality (no multi-tasking)
 
+## Prerequisites
+
+deckrd-coder requires an existing Deckrd workflow and a generated `tasks.md`.
+
+- deckrd must be used first to derive tasks
+- deckrd-coder operates exclusively on tasks defined in `tasks.md`
+- Without deckrd and its derived tasks, deckrd-coder has no standalone use
+
 ## Getting Started
 
 ### Installation
 
-The deckrd-coder plugin is included with deckrd. Once enabled through:
+deckrd-coder is available as an optional plugin for deckrd users.
 
 ```bash
 Claude Code → Settings → Plugins → Enable deckrd
@@ -163,4 +185,5 @@ deckrd-coder is designed to work seamlessly within Deckrd sessions:
 
 ## License
 
-MIT
+The MIT License
+Copyright (C) 2025- aglabo

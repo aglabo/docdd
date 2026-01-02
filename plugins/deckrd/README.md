@@ -19,6 +19,12 @@ deckrd is a **goals-to-tasks framework** designed for thoughtful project plannin
 
 Rather than jumping directly to implementation, deckrd ensures you capture reasoning at each stage—understanding *why* decisions are made, not just *what* gets built.
 
+## What deckrd does NOT do
+
+- It does not manage source code repositories
+- It does not execute or modify code automatically
+- It does not replace developer judgment
+
 ## Key Features
 
 - Stepwise Workflow: Goals → Requirements → Specifications → Implementation → Tasks
@@ -26,6 +32,25 @@ Rather than jumping directly to implementation, deckrd ensures you capture reaso
 - AI-Guided: Interactive guidance at each step keeps you focused and aligned
 - State Management: Automatic session tracking ensures workflow consistency
 - Flexible: Works with any project type—features, refactoring, debugging, documentation
+
+## Implementation (in deckrd)
+
+In deckrd, "implementation" does not mean writing production code.
+It refers to deriving implementation-ready decisions, constraints,
+and structural outlines that make coding straightforward and unambiguous.
+
+## The Output: tasks.md
+
+The final output of deckrd is **tasks.md**—a document that serves as your **direct starting point for coding**.
+
+Unlike planning documents that capture intent and reasoning, tasks.md is your actionable blueprint:
+
+- **Concrete Tasks**: Specific, prioritized development tasks derived from your implementation plan
+- **Acceptance Criteria**: Clear definitions of what "done" means for each task
+- **Implementation Constraints**: Technical decisions and patterns established during earlier phases
+- **Ready-to-Code Format**: Structured in a way that developers can immediately begin implementation
+
+This means when you finish the deckrd workflow, you're not just ready to start coding—you have a detailed roadmap that eliminates ambiguity and reduces rework. Each task in tasks.md flows directly into your development cycle.
 
 ## Getting Started
 
@@ -70,4 +95,5 @@ For detailed guides and command reference, see the included skill documentation 
 
 ## License
 
-MIT
+The MIT License
+Copyright (C) 2025- aglabo
