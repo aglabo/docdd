@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Deckrd - your goals to tasks framework",
-    "version": "0.0.3"
+    "version": "0.0.4"
   },
   "plugins": [
     {
@@ -20,14 +20,20 @@
     },
     {
       "name": "deckrd-coder",
-      "description": "Deckrd タスク実装スキル - tasks.md から指定タスクを自動抽出し、BDD厳格プロセスで実装。内部で bdd-coder エージェント実行。プロジェクトメモリ & serena-mcp 活用でトークン効率化。",
+      "description": "Deckrd タスク実装スキル - tasks.md から指定タスクを抽出し、BDD 厳格プロセスで実装。内部で bdd-coder の判断規則を適用する。",
       "source": "./plugins/deckrd-coder",
       "strict": false,
       "skills": [
         "./plugins/deckrd-coder/skills/deckrd-coder"
-      ],
+      ]
+    },
+    {
+      "name": "bdd-coder",
+      "description": "BDD 実装における判断規則を定義するメソッドレベルのエージェント。テストをファイル単位ではなくアサーション単位で扱い、「1メッセージ＝1テスト」の原則に基づく RED→GREEN→REFACTOR の厳密な段階実装を規定する。",
+      "source": "./plugins/bdd-coder",
+      "strict": false,
       "agents": [
-        "./plugins/deckrd-coder/agents/bdd-coder.md"
+        "./plugins/bdd-coder/agents/bdd-coder.md"
       ]
     }
   ]
