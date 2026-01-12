@@ -33,7 +33,7 @@
       "source": "./plugins/bdd-coder",
       "strict": false,
       "agents": [
-        "./plugins/bdd-coder/agents/bdd-coder.md"
+        "./agents/bdd-coder.md"
       ]
     }
   ]
