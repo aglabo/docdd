@@ -1,0 +1,8 @@
+{
+  "name": "bdd-coder",
+  "description": "BDD-style coding agent for deckrd tasks",
+  "version": "0.0.4",
+  "agents": [
+    "./agents/bdd-coder.md"
+  ]
+}
