@@ -16,7 +16,7 @@
     },
     "codex-mcp": {
       "type": "stdio",
-      "command": "codex",
+      "command": "C:/Users/atsushifx/.local/share/pnpm/codex",
       "args": [
         "mcp-server"
       ],
